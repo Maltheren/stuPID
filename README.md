@@ -1,6 +1,8 @@
 # stuPID
 A flawed product of a deranged mind (homecooked PID controller)
 
+Thanks to Lasse for a look at his arduino sketch as inspiration.
+And Thanks to David for sitting down and blaming every questionable choice made <3.
 
 
 # How to use
