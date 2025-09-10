@@ -16,15 +16,15 @@ void main(){
     int T_s = 10; //Sample period in miliseconds
     //            out: min max,  T_s   Kp  Ki  Kd 
     //                  V    V    V    V   V   V
-    PID_ctrl AZI_ctrl(-155, 155, T_s, 0.6, 1, 0.12);
+    PID_ctrl ctrl(-155, 155, T_s, 0.6, 1, 0.12);
 
 
     double k = {0.1, 0.5, 0.1}
     //If you would want to set the parameters dynamically
-    AZI_ctrl.set_parameters(k);
+    ctrl.set_parameters(k);
 
     //Setting the reference
-    AZI_ctrl.set_point(0);
+    ctrl.set_point(0);
 
 
     while(true){
