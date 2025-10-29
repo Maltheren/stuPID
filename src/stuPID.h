@@ -29,8 +29,8 @@ struct PID_ctrl
     /// @return The output variable within specified bounds determined by the controller 
     double get_output() const { return output;} 
     void set_parameters(double K[3]) {this->K[0] = K[0]; this->K[1] = K[1]; this->K[2] = K[2];};
-    double get_windup_limit() const {return I_percent_bound};
-    double set_windup_limit(double input) const {this->I_percent_bound = input}
+    double get_windup_limit() {return I_percent_bound;}
+    double set_windup_limit(double input) {this->I_percent_bound = input;}
     /// @brief Sets the setpoint
     /// @param input The state we want the system to be in, e.g a target position, speed, something like that.  
     void set_point(double input) {setpoint = input;}
